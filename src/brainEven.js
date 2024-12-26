@@ -6,7 +6,7 @@ function TheMotor(feature, description) {
     const name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
     console.log(description);
-    for (let i = 1; i <=needAnswers, i+=1){
+    for (let i = 1; i <=needAnswers; i+=1){
         const [exp, rightAnswer] = feature();
         console.log(`Question: ${exp} `);
         const userAnswer = readlineSync.question('Your Answer: ');
