@@ -2,7 +2,7 @@ import { TheMotor } from "../index.js";
 import { getRandomNum } from "./brainEven.js";
 const alert = 'What is the result of the expression?';
 const operations = ()=>{
-    const maxVal = 15;
+    const maxVal = 10;
     const minVal = 1;
     const firstNum = getRandomNum(minVal, maxVal);
     const secondNum = getRandomNum(maxVal,maxVal);
