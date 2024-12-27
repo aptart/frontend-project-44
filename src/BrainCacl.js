@@ -9,7 +9,7 @@ const operations = ()=>{
     const ops = ["+", "-", "*"];
     const minIndex = 0;
     const MaxIndex = ops.length-1;
-    const randomOp = ops(getRandomNum(minIndex, MaxIndex));
+    const randomOp = ops[getRandomNum(minIndex, MaxIndex)];
     return `${firstNum}${randomOp}${secondNum}`
 }
 const StartValueOPS = (exs)=>{
@@ -27,7 +27,7 @@ const StartValueOPS = (exs)=>{
         case '*': result = num1 * num2;
             break;
         default: throw new Error(`Unknown order state: '${exs}'!`);
-  }
+    }
 
   return result;
 }
