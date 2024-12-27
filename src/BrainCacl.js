@@ -1,5 +1,5 @@
 import { TheMotor } from "../index.js";
-import { getRandomNum } from "src/brainEven.js";
+import { getRandomNum } from "./brainEven.js";
 const alert = 'What is the result of the expression?';
 const operations = ()=>{
     const maxVal = 30;
