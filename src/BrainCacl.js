@@ -37,6 +37,6 @@ const gameCalc = ()=>{
     return [ops, rightAnswer];
 }
 const ReadyGameCalc = ()=>{
-    TheMotor(gameCalc, alert)
+    return TheMotor(gameCalc, alert);
 }
 export default ReadyGameCalc;
