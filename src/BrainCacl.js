@@ -1,5 +1,5 @@
 import { TheMotor } from "../index.js";
-import { getRandomNum } from "./brainEven.js";
+import { getRandomNum } from "src/brainEven.js";
 const alert = 'What is the result of the expression?';
 const operations = ()=>{
     const maxVal = 30;
@@ -10,7 +10,7 @@ const operations = ()=>{
     const minIndex = 0;
     const MaxIndex = ops.length-1;
     const randomOp = ops[getRandomNum(minIndex, MaxIndex)];
-    return `${firstNum}${randomOp}${secondNum}`
+    return `${firstNum} ${randomOp} ${secondNum}`
 }
 const StartValueOPS = (exs)=>{
     const convert = exs.split(' ');
