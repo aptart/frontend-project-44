@@ -27,10 +27,10 @@ const StartValueOPS = (exs)=>{
         case '*': result = num1 * num2;
             break;
         default: throw new Error(`Unknown order state: '${exs}'!`);
-    }
+    };
 
-  return result;
-}
+    return result;
+};
 const gameCalc = ()=>{
     const ops = operations();
     const rightAnswer = StartValueOPS(ops);
