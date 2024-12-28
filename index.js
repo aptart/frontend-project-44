@@ -1,12 +1,12 @@
 import readlineSync from "readline-sync"
 export const needAnswers = 3;
-function TheMotor(feature, description) {
+const TheMotor = (feat, alert) =>{
     console.log('Welcome to the Brain Games!');
     const name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
-    console.log(description);
+    console.log(alert);
     for (let i = 1; i <=needAnswers; i+=1){
-        const [exp, rightAnswer] = feature();
+        const [exp, rightAnswer] = feat();
         console.log(`Question: ${exp} `);
         const userAnswer = readlineSync.question('Your Answer: ');
         if (userAnswer !== rightAnswer) {
