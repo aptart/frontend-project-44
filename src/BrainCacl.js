@@ -10,7 +10,7 @@ const operations = ()=>{
     const minIndex = 0;
     const MaxIndex = ops.length-1;
     const randomOp = ops[getRandomNum(minIndex, MaxIndex)];
-    return `${firstNum}${randomOp}${secondNum}`
+    return `${firstNum} ${randomOp} ${secondNum}`
 }
 const StartValueOPS = (exs)=>{
     const convert = exs.split(' ');
