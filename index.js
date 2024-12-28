@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync"
 export const needAnswers = 3;
-const TheMotor = (feat, alert) =>{
+const TheMotor = (alert, feat) =>{
     const maxRoundCount = 3;
 
   console.log('Welcome to the Brain Games!');
