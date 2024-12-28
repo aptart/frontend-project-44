@@ -1,43 +1,36 @@
 import { TheMotor } from "../index.js";
 import { getRandomNum } from "./brainEven.js";
 const alert = 'What is the result of the expression?';
-const operations = ()=>{
-    const maxVal = 10;
-    const minVal = 1;
-    const firstNum = getRandomNum(minVal, maxVal);
-    const secondNum = getRandomNum(maxVal,maxVal);
-    const ops = ["+", "-", "*"];
-    const minIndex = 0;
-    const MaxIndex = ops.length-1;
-    const randomOp = ops[getRandomNum(minIndex, MaxIndex)];
-    return `${firstNum} ${randomOp} ${secondNum}`
-}
-const StartValueOPS = (exs)=>{
-    const convert = exs.split(' ');
-    const num1 = +convert[0];
-    const num2 = +convert[convert.length - 1];
-    const ops = convert[1];
-    let result = 0;
-
-    switch (ops) {
-        case '+': result = num1 + num2;
-            break;
-        case '-': result = num1 - num2;
-            break;
-        case '*': result = num1 * num2;
-            break;
-        default: throw new Error(`Unknown order state: '${exs}'!`);
-    };
-
-    return result;
+const getResultOfExpression = (firstValue, operator, secondValue) => {
+    switch (operator) {
+      case '+':
+        return firstValue + secondValue;
+      case '-':
+        return firstValue - secondValue;
+      case '*':
+        return firstValue * secondValue;
+      default:
+        throw new Error(`Unknown operator: '${operator}'!`);
+    }
 };
-const gameCalc = ()=>{
-    const ops = operations();
-    const rightAnswer = StartValueOPS(ops);
-    return [ops, rightAnswer];
-}
-const ReadyGameCalc = ()=>{
-    TheMotor(gameCalc, alert);
-}
+  
+const operators = ['+', '-', '*'];
+  
+  
+const genRounds = () => {
+    const firstNumber = getRandomNum(1, 25);
+    const secondNumber = getRandomNum(1, 25);
+    const operator = operators[getRandomNum(0, operators.length - 1)];
+  
+    const question = `${firstNumber} ${operator} ${secondNumber}`;
+    const resultOfExpression = getResultOfExpression(firstNumber, operator, secondNumber);
+    const correctAnswer = resultOfExpression.toString();
+  
+    return [question, correctAnswer];
+};
+  
+const ReadyGameCalc = () => {
+    TheMotor(alert, genRounds);
+};
 
 export default ReadyGameCalc;
