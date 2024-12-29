@@ -3,3 +3,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/97d0f050464bd5679e47/maintainability)](https://codeclimate.com/github/aptart/frontend-project-44/maintainability)
 <h1>brain-even:</h1>
 <p>https://asciinema.org/a/9Xx9JuZO1MyvIfoEo4P1oJJpY</p>
+<h1>brain-calc,brain-gcd,brain-prime,brain-progression:</h1>
+<p>https://asciinema.org/a/VjMDwE2eJgt2LilFsm9n7GnfI<p>
