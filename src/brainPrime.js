@@ -11,7 +11,7 @@ const isPrime = (num)=>{
     };
     return true;
 };
-const alert = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+const description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 const genRounds = ()=>{
     const question = getRandomNum(1, 1000)
     const rightAnswer = isPrime(question) ? "yes": "no";
@@ -19,7 +19,7 @@ const genRounds = ()=>{
 
 }
 const gamePrime = ()=>{
-    TheMotor(alert, genRounds);
+    TheMotor(description, genRounds);
 }
 export default gamePrime;
 

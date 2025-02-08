@@ -7,7 +7,7 @@ const genPRG = (length, firstElem, prgStep)=>{
     }
     return progression;
 }
-const alert = "What number is missing in the progression?";
+const description = "What number is missing in the progression?";
 const genRounds = () =>{
     const progressionLength = 10;
     const firstElem = getRandomNum(1, 10);
@@ -22,6 +22,6 @@ const genRounds = () =>{
 
 }
 const gamePRG = () =>{
-    TheMotor(alert, genRounds);
+    TheMotor(description, genRounds);
 }
 export default gamePRG;

@@ -1,6 +1,6 @@
 import { TheMotor } from "../index.js";
 import { getRandomNum } from "./brainEven.js";
-const alert = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 const getResultOfExpression = (firstValue, operator, secondValue) => {
     switch (operator) {
       case '+':
@@ -29,8 +29,8 @@ const genRounds = () => {
     return [question, correctAnswer];
 };
   
-const ReadyGameCalc = () => {
-    TheMotor(alert, genRounds);
+const readyGameCalc = () => {
+    TheMotor(description, genRounds);
 };
 
-export default ReadyGameCalc;
+export default readyGameCalc;
