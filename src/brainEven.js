@@ -1,5 +1,5 @@
 
-import { TheMotor } from '../index.js';
+import { theMotor } from '../index.js';
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 
@@ -13,7 +13,7 @@ const genRounds = ()=>{
 
 }
 const gameven = () =>{
-    TheMotor(description, genRounds)
+    theMotor(description, genRounds)
 };
 
 export {getRandomNum, gameven};

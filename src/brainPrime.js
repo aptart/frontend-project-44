@@ -1,5 +1,5 @@
 import { getRandomNum } from "./brainEven.js";
-import { TheMotor } from "../index.js";
+import { theMotor } from "../index.js";
 const isPrime = (num)=>{
     if (num <= 1){
         return false;
@@ -19,7 +19,7 @@ const genRounds = ()=>{
 
 }
 const gamePrime = ()=>{
-    TheMotor(description, genRounds);
+    theMotor(description, genRounds);
 }
 export default gamePrime;
 

@@ -1,7 +1,7 @@
 import readlineSync from "readline-sync"
 
-const TheMotor = (description, genRoundsData) =>{
-    const maxRoundCount = 3;
+const theMotor = (description, genRoundsData) =>{
+  const maxRoundCount = 3;
 
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -27,4 +27,4 @@ const TheMotor = (description, genRoundsData) =>{
   console.log(`Congratulations, ${userName}!`);
 };
 
-export  {TheMotor};
+export  {theMotor};

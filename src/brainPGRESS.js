@@ -1,5 +1,5 @@
 import { getRandomNum } from "./brainEven.js";
-import { TheMotor } from "../index.js";
+import { theMotor } from "../index.js";
 const genPRG = (length, firstElem, prgStep)=>{
     const progression = [];
     for (let i = 0; i < length; i += 1) {
@@ -22,6 +22,6 @@ const genRounds = () =>{
 
 }
 const gamePRG = () =>{
-    TheMotor(description, genRounds);
+    theMotor(description, genRounds);
 }
 export default gamePRG;
