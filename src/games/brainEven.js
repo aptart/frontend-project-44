@@ -8,7 +8,7 @@ const genRounds = ()=>{
     const minNum = 1;
     const maxNum = 100;
     const randomNum = getRandomNum(minNum, maxNum);
-    const rightAnswer = isEven(description) ? 'yes' : 'no';
+    const rightAnswer = isEven(randomNum) ? 'yes' : 'no';
     return [randomNum, rightAnswer];
 
 }
