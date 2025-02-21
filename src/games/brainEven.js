@@ -13,7 +13,7 @@ const genRounds = ()=>{
 
 }
 const gameven = () =>{
-    theMotor(description, genRounds)
+    theMotor(description, genRounds);
 };
 
 export {getRandomNum, gameven};
