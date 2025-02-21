@@ -1,3 +1,3 @@
-import { TheMotor } from "./src/index.js";
+import { theMotor } from "./src/index.js";
 
-export  {TheMotor};
+export  {theMotor};
