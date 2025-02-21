@@ -1,5 +1,5 @@
 import { getRandomNum } from "./brainEven.js";
-import { theMotor } from "../index.js";
+import { theMotor } from "../../index.js";
 const description = "Find the greatest common divisor of given numbers.";
 const getNOD = (num1, num2)=>{
     if (num1 === 0){

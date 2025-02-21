@@ -1,14 +1,14 @@
 
-import { theMotor } from '../index.js';
+import { theMotor } from '../../index.js';
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-
+const isEven = (number) => number % 2 === 0;
 
 const description =  '"yes" if the number is even, otherwise answer "no".';
 const genRounds = ()=>{
     const minNum = 1;
     const maxNum = 100;
     const randomNum = getRandomNum(minNum, maxNum);
-    const rightAnswer =  randomNum % 2 === 0 ? 'yes' : 'no';
+    const rightAnswer = isEven(description) ? 'yes' : 'no';
     return [randomNum, rightAnswer];
 
 }
