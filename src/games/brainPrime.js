@@ -1,5 +1,5 @@
 import { getRandomNum } from "./brainEven.js";
-import { theMotor } from "../../index.js";
+import theMotor from "../index.js";
 const isPrime = (num)=>{
     if (num <= 1){
         return false;

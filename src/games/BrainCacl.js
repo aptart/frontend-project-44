@@ -1,4 +1,4 @@
-import { theMotor } from "../../index.js";
+import theMotor from "../index.js";
 import { getRandomNum } from "./brainEven.js";
 const description = 'What is the result of the expression?';
 const getResultOfExpression = (firstValue, operator, secondValue) => {

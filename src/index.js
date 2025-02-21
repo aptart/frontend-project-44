@@ -27,4 +27,4 @@ const theMotor = (description, genRoundsData) =>{
   console.log(`Congratulations, ${userName}!`);
 };
 
-export  {theMotor};
+export default theMotor;

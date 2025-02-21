@@ -1,5 +1,5 @@
+import theMotor from "../index.js";
 
-import { theMotor } from '../../index.js';
 const getRandomNum = (min = 1, max = 99) => Math.floor(Math.random() * (max - min + 1) + min);
 const isEven = (number) => number % 2 === 0;
 
