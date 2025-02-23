@@ -1,5 +1,5 @@
 import theMotor from "../index.js";
-import { getRandomNum } from "./brainEven.js";
+import { getRandomNum } from "../randomNumGen.js";
 const description = 'What is the result of the expression?';
 const getResultOfExpression = (firstValue, operator, secondValue) => {
     switch (operator) {

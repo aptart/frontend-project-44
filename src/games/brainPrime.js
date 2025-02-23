@@ -1,4 +1,4 @@
-import { getRandomNum } from "./brainEven.js";
+import { getRandomNum } from "../randomNumGen.js";
 import theMotor from "../index.js";
 const isPrime = (num)=>{
     if (num <= 1){
